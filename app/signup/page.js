@@ -4,10 +4,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import React from 'react'
 import { toast } from 'react-toastify'
-export const metadata = {
-  title: 'Register',
-  description: 'Register Page',
-}
+
 const Page = () => {
   const [userData, setUserData] = React.useState({ firstName: '', lastName: '', password: '', country: '', streetAddress: '', city: '', zipCode: '', state: '', email: '', about: '' })
   // client.js
@@ -39,7 +36,7 @@ const Page = () => {
     setUserData({ ...userData, [e.target.name]: e.target.value })
   }
   return <div className="px-4 sm:px-12 md:px-16 lg:px-24 flex min-h-full flex-col justify-center py-12">
-
+    <title>Register</title>
     <div className="sm:mx-auto sm:w-full sm:max-w-sm">
       <Link href={'/'}>
         {/* eslint-disable-next-line @next/next/no-img-element */}

@@ -2,10 +2,6 @@
 import Layout from '@/components/Layout/Layout'
 import React, { useState } from 'react'
 import { FaPlus, FaMinus } from "react-icons/fa"
-export const metadata = {
-    title: 'Seller FAQ',
-    description: 'Home Page',
-}
 
 const faqs = [
     { id: 'hello sir how are you', 'question': 'hello sir how are you?', 'answer': 'I am fine sir' },
@@ -23,7 +19,7 @@ const page = () => {
             setFaqId(id)
     }
     return (
-        <Layout>
+        <Layout title={'Seller FAQ'}>
             <section className="px-4 sm:px-12 md:px-16 lg:px-24 text-gray-400 body-font">
                 <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
                     <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">

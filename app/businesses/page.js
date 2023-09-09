@@ -37,8 +37,8 @@ const Page = () => {
         getBusinesses()
     }, [])
     return (
-        <Layout>
-            <section className="px-4 sm:px-12 md:px-16 lg:px-24  my-24  text-white body-font">
+        <Layout title={'Businesses for Sale'}>
+            <section className="px-4 sm:px-12 md:px-16 lg:px-24  my-12  text-white body-font">
                 {loading ? <Loader /> : businesses.length > 0 ? <div class="container px-5 py-24 mx-auto">
                     <div class="flex flex-col text-center w-full mb-20">
                         <h2 class="text-xs text-orange-500 tracking-widest font-medium title-font mb-1">GROWN IDEAS</h2>

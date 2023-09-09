@@ -3,10 +3,8 @@ import Layout from '@/components/Layout/Layout'
 import Input from '@/components/Utils/Input'
 import React from 'react'
 import { toast } from 'react-toastify'
-export const metadata = {
-    title: 'Contact',
-    description: 'Contact Page',
-}
+
+
 const Page = () => {
     const [userData, setUserData] = React.useState({ firstName: '', lastName: '', email: '', contact: '', message: '' })
     // client.js
@@ -39,7 +37,7 @@ const Page = () => {
         setUserData({ ...userData, [e.target.name]: e.target.value })
     }
     return (
-        <Layout>
+        <Layout title={'Contact'}>
             <section className="px-4 sm:px-12 md:px-16 lg:px-24 text-gray-600 body-font relative">
                 <div className="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
                     <div className=" md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">

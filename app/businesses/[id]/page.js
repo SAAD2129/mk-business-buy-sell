@@ -5,9 +5,7 @@ import { useSearchParams } from 'next/navigation'
  
 
 export default function Page() {
-  const router = useRouter()
   useEffect(()=>{
-    console.log(router.query)
   },[])
-  return <p>Post: {router.query}</p>
+  return <p>Post: </p>
 }

@@ -1,14 +1,12 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-export const metadata = {
-  title: 'Home',
-  description: 'Home Page',
-}
+import Head from "next/head";
+
+
 export default function Home() {
   return (
     <>
-      <Header />
-      {/* Hero Section */}
+      <Header title={'Home'}/>
       <section className="px-4 sm:px-12 md:px-16 lg:px-24 text-gray-600 body-font">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">

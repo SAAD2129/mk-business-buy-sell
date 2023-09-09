@@ -4,10 +4,8 @@ import Head from 'next/head'
 import Link from 'next/link'
 import React, { useState } from 'react'
 import { toast } from 'react-toastify'
-export const metadata = {
-    title: 'Sell A Business',
-    description: 'Home Page',
-}
+
+
 const Page = () => {
     const [businessDetails, setBusinessDetails] = useState({
         businessID: '', yearEstablished: '', location: '', businessCategory: '', financing: '', status: '', description: '', askingPrice: '', revenue: '', sde: '', ebitda: '', downPayment: '', ffe: '', occupancyCost: '', inventory: '',
@@ -16,7 +14,7 @@ const Page = () => {
 
         e.preventDefault()
         const { businessID, yearEstablished, location, businessCategory, financing, status, description, askingPrice, revenue, sde, } = businessDetails
-        if (!businessID || !yearEstablished || !location || !businessCategory || !financing || !status || !description || !askingPrice || !revenue || !sde){
+        if (!businessID || !yearEstablished || !location || !businessCategory || !financing || !status || !description || !askingPrice || !revenue || !sde) {
             // console.log(businessID, yearEstablished, location, businessCategory, financing, status, description, askingPrice, revenue, sde, )
             return toast.error('Please fill all required fields')
             // return;
@@ -50,9 +48,7 @@ const Page = () => {
         setBusinessDetails({ ...businessDetails, [e.target.name]: e.target.value })
     }
     return (<div className="px-4 sm:px-12 md:px-16 lg:px-24 flex min-h-full flex-col justify-center py-12">
-        <Head>
-            <title>Sell A Business</title>
-        </Head>
+        <title>Sell A Business</title>
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
             <Link href={'/'}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}

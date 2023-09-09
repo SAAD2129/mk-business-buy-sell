@@ -1,13 +1,10 @@
 "use client"
 import Input from '@/components/Utils/Input'
+import Head from 'next/head'
 import Link from 'next/link'
 import React from 'react'
 import { toast } from 'react-toastify'
 
-export const metadata = {
-  title: 'Login',
-  description: 'Login Page',
-}
 const Page = () => {
   const [userData, setUserData] = React.useState({ password: '', email: '' })
   const loginUser = async (e) => {
@@ -37,6 +34,7 @@ const Page = () => {
     setUserData({ ...userData, [e.target.name]: e.target.value })
   }
   return <div className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+      <title>Login</title>
     <div className="sm:mx-auto sm:w-full sm:max-w-sm">
       <Link href={'/'}>
         {/* eslint-disable-next-line @next/next/no-img-element */}

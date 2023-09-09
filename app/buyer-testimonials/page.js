@@ -1,13 +1,10 @@
 import Layout from '@/components/Layout/Layout'
 import React from 'react'
 
-export const metadata = {
-    title: 'Buyer Testimonials',
-    description: 'Buyer Testimonials Page',
-}
+
 const page = () => {
     return (
-        <Layout>
+        <Layout title={'Buyer Testimonials'}>
             <section className="px-4 sm:px-12 md:px-16 lg:px-24 text-gray-600 body-font">
                 <div className="container px-5 py-24 mx-auto">
                     <h1 className="text-3xl font-medium title-font text-white mb-12 text-center">Buyer&apos;s Testimonials</h1>

@@ -31,7 +31,7 @@ const Page = () => {
         getUsers()
     }, [])
     return (
-        <Layout>
+        <Layout title={'Our Brokers'}>
             <section className="px-4 sm:px-12 md:px-16 lg:px-24 text-gray-400 body-font">
                 <div className="container px-5 py-24 mx-auto">
                     <div className="flex flex-wrap w-full mb-20">
